@@ -60,8 +60,41 @@
     margin-left: 10px;
     margin-right: 10px;
  }
+
+ .header__contact {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ .header__publish {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ .header__dashboard {
+     margin-left: 10px;
+     margin-right: 10px;
+ }
  
  .header__optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+ }
+
+ .header__optionContact{
+    display: flex;
+    align-items: center;
+    color: white;
+ }
+
+ .header__optionPublish{
+    display: flex;
+    align-items: center;
+    color: white;
+ }
+   
+ .header__optionDashboard{
     display: flex;
     align-items: center;
     color: white;
