@@ -9,6 +9,8 @@ import Account from "./components/Dashboard/Account";
 import PublicProfile from "./components/Dashboard/PublicProfile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from './components/Contact/Contact';
+import Vehicles from './components/Category/Vehicles/Vehicles';
+import Electronic from "./components/Category/Electronics/Electronics";
 
 function App() {
   return (
@@ -33,6 +35,14 @@ function App() {
           <Router path="/account">
             <Header />
             <Account />
+          </Router>
+          <Router path="/vehicles">
+            <Header />
+            <Vehicles />
+          </Router>
+          <Router path="/electronic">
+            <Header />
+            <Electronic />
           </Router>
           <Router path="/publicprofile">
             <Header />
