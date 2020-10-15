@@ -42,10 +42,12 @@ function Header() {
                     <CarIcon />
                     <span className="header__optionLineTwo header__basketCount">0</span>
                 </div> */}
+                <Link to="/publicprofile">
                 <div className="header__optionDashboard">
                     <Dashboard />
                     <span className="header__optionLineTwo header__dashboard">Dashboard</span>
                 </div>
+                </Link>
             </div>
         </div>
     )

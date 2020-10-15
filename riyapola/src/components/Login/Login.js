@@ -12,6 +12,7 @@ function Login() {
                     src={Logo2}
                 />
             </Link>
+            <div className="login__card">
              <div className='login__container'>
                 <h1>Sign-in</h1>
 
@@ -32,7 +33,7 @@ function Login() {
 
                 <button className='login__registerButton'>Create your Riyaola Account</button>
             </div>
-            
+            </div>
         </div>
     )
 }

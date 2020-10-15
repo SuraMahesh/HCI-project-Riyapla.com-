@@ -14,9 +14,9 @@
     background-color: gainsboro;
   }
   
-  .home__row {
+
+  .home__section {
     display: flex;
-    z-index: 1;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 30px;
+   
   }
