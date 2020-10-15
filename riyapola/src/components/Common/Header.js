@@ -26,16 +26,20 @@ function Header() {
               
                 <div className="header__option">
                 </div>
+                <Link to="/contact">
                 <div className="header__optionContact">
                     <Contact />
                     <span className="header__optionLineTwo header__contact">Contact</span>
                 </div>
+                </Link>
                 <div className="header__option">
                 </div>
+                <Link to="/publish">
                 <div className="header__optionPublish">
                     <Publish />
                     <span className="header__optionLineTwo header__publis">Publish</span>
                 </div>
+                </Link>
                 <div className="header__option">
                 </div>
                 {/* <div className="header__optionBasket">

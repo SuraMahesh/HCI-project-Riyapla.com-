@@ -15,6 +15,7 @@ import Property from "./components/Category/Property/Property";
 import Jobs from "./components/Category/Jobs/Jobs";
 import HandG from "./components/Category/Home & Gardens/HandG";
 import Education from './components/Category/Education/Education';
+import Footer from './components/Common/Footer';
 
 function App() {
   return (
@@ -27,50 +28,62 @@ function App() {
           <Router path="/dashboard">
             <Header />
             <Dashboard />
+            <Footer />
           </Router>
           <Router path="/publish">
             <Header />
             <Publish />
+            <Footer />
           </Router>
           <Router path="/contact">
             <Header />
             <Contact />
+            <Footer />
           </Router>
           <Router path="/account">
             <Header />
             <Account />
+            <Footer />
           </Router>
           <Router path="/vehicles">
             <Header />
             <Vehicles />
+            <Footer />
           </Router>
           <Router path="/electronic">
             <Header />
             <Electronic />
+            <Footer />
           </Router>
           <Router path="/property">
             <Header />
             <Property />
+            <Footer />
           </Router>
           <Router path="/jobs">
             <Header />
             <Jobs />
+            <Footer />
           </Router>
           <Router path="/HandG">
             <Header />
             <HandG />
+            <Footer />
           </Router>
           <Router path="/education">
             <Header />
             <Education />
+            <Footer />
           </Router>
           <Router path="/publicprofile">
             <Header />
             <PublicProfile />
+            <Footer />
           </Router>
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>

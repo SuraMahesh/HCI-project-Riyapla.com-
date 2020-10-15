@@ -10,7 +10,7 @@ function PublicProfile() {
             <div className="card-body">
               <nav className="nav flex-column nav-pills nav-gap-y-1">
                 <a
-                  href="creatorprofile"
+                  href="#"
                   data-toggle="tab"
                   className="nav-item nav-link has-icon nav-link-faded active"
                 >
