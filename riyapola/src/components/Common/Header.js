@@ -6,12 +6,16 @@ import Contact from "@material-ui/icons/Email";
 import Publish from "@material-ui/icons/Create";
 import Dashboard from "@material-ui/icons/Person"
 import { Link } from "react-router-dom";
+import Logo1 from "../Images/Logo1.jpeg";
 
 
 function Header() {
     return (
         <div className="header">
-            <img className="header__logo"/>
+            <Link to="/">
+            <img className="header__logo"
+            src={Logo1}/>
+            </Link>
             <div className="header__search">
                 <input className="header__searchInput" type="text" />
                 <SearchIcon className="header__searchIcon" />

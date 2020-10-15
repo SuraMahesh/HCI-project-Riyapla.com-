@@ -16,6 +16,7 @@ import Jobs from "./components/Category/Jobs/Jobs";
 import HandG from "./components/Category/Home & Gardens/HandG";
 import Education from './components/Category/Education/Education';
 import Footer from './components/Common/Footer';
+import Cars from "./components/Category/Vehicles/Cars";
 
 function App() {
   return (
@@ -78,6 +79,11 @@ function App() {
           <Router path="/publicprofile">
             <Header />
             <PublicProfile />
+            <Footer />
+          </Router>
+          <Router path="/cars">
+            <Header />
+            <Cars />
             <Footer />
           </Router>
           <Route path="/">

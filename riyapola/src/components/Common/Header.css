@@ -99,5 +99,14 @@
     align-items: center;
     color: white;
  }
+
+ .header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    height: 60px;
+ }
     
  
