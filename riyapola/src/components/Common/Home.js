@@ -25,25 +25,36 @@ function Home() {
                     description="Shop home entertainment, accessories and more."
                     />
                     </Link>
+                    <Link to="property">
                     <Card
                     src="https://nextbigtechnology.com/wp-content/uploads/2019/11/shutterstock_198883310-e1499838393321-2.jpg"
                     title="Property"
                     description="Spaces that are more than just a place to sleep."
                     />
+                    </Link>
                 </div>
                 <div className="home__section">
+                    <Link to="jobs">
                     <Card 
                     src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Deals_1x._SY304_CB430401028_.jpg"
                     title="Jobs"
                     description="Samples will help you compose a job posting that meets your company's needs."
                     />
+                    </Link>
+                    <Link to="education">
                     <Card 
-                    src=""/>
+                    src="https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg"
+                    title="Education"
+                    description="Education is the teaching or learning of knowledge, especially to develop the reasoning."
+                    />
+                    </Link>
+                    <Link to="HandG">
                     <Card 
                     src="https://a0.muscache.com/im/pictures/fdb46962-10c1-45fc-a228-d0b055411448.jpg?im_w=720"
                     title="Home & Gardens"
                     description="The best in desin, Decoration and style"
                     />
+                    </Link>
                 </div>
             </div>
         </div>

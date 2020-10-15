@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Jobs.css";
+import "./Education.css";
 
-function Jobs() {
+function Education() {
     return (
         <div>
             
@@ -9,4 +9,4 @@ function Jobs() {
     )
 }
 
-export default Jobs
+export default Education

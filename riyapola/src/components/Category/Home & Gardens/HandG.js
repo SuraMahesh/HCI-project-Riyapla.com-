@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Jobs.css";
+import "./HandG";
 
-function Jobs() {
+function HandG() {
     return (
         <div>
             
@@ -9,4 +9,4 @@ function Jobs() {
     )
 }
 
-export default Jobs
+export default HandG

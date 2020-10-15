@@ -1,4 +1,5 @@
 import React from 'react'
+import "./VehiclesCard.css";
 
 function VehiclesCard( {src, title, description, price } ) {
     return (

@@ -11,6 +11,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from './components/Contact/Contact';
 import Vehicles from './components/Category/Vehicles/Vehicles';
 import Electronic from "./components/Category/Electronics/Electronics";
+import Property from "./components/Category/Property/Property";
+import Jobs from "./components/Category/Jobs/Jobs";
+import HandG from "./components/Category/Home & Gardens/HandG";
+import Education from './components/Category/Education/Education';
 
 function App() {
   return (
@@ -43,6 +47,22 @@ function App() {
           <Router path="/electronic">
             <Header />
             <Electronic />
+          </Router>
+          <Router path="/property">
+            <Header />
+            <Property />
+          </Router>
+          <Router path="/jobs">
+            <Header />
+            <Jobs />
+          </Router>
+          <Router path="/HandG">
+            <Header />
+            <HandG />
+          </Router>
+          <Router path="/education">
+            <Header />
+            <Education />
           </Router>
           <Router path="/publicprofile">
             <Header />
