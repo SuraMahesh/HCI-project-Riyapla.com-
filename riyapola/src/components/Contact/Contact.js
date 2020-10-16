@@ -4,7 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function onChange(value) {
     console.log("Captcha value:", value)
-  }
+}
 
 function Contact() {
     return (
@@ -39,13 +39,16 @@ function Contact() {
                         <p></p>
 
                         <ReCAPTCHA sitekey="YOUR_CLIENT_SITE_KEY" onChange={onChange} />
+                        <p></p>
 
-                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                        <div className="details1">
 
+                        <button type="button" class="btn btn-success btn-lg">Send</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Cancel</button>
+                        </div>
                     </form>
 
-                   
+
 
                 </div>
             </div>

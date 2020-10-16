@@ -22,13 +22,14 @@ function Publish() {
                             </select>
                         </div>
                         <p />
-                        <div className="">
+                        <div className="details1">
                             <div className="details">
                                 <h6 className="topic">Title</h6>
                                 <div class="form-group col-md-6">
                                     <input type="text" class="form-control" id="inputCity"></input>
                                 </div>
 
+                            </div>
                             </div>
                             <div className="details">
                                 <h6 className="topic">Price</h6>
@@ -45,7 +46,7 @@ function Publish() {
                                     <input type="text" class="form-control" id="inputZip"/>
                                 </div>
                                 
-                            </div>
+                            
                             <button className="login__signInButton" type='submit'>Sign In</button>
 
                     </form>

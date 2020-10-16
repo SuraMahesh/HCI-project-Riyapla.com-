@@ -370,12 +370,14 @@ function PublicProfile() {
                   <div className="form-group small text-muted">
                   </div>
                   <p></p>
+                  <div className="details1">
                   <button type="button" className="btn btn-primary">
                     Update Profile
                   </button>
                   <button type="reset" className="btn btn-light">
                     Reset Changes
                   </button>
+                  </div>
                 </form>
               </div>
             </div>
