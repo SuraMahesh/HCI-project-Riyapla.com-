@@ -11,21 +11,21 @@ function Electronics() {
             <div className="electronic__section">
                 <Link to="/domestic">
             <Card 
-                    src="https://i1.wp.com/valourdigest.com/wp-content/uploads/2018/01/home-appliance1.jpg?fit=576%2C288&amp;ssl=1"
+                    src="https://www.lowcarbonbuildings.org.uk/wp-content/uploads/2018/05/home-appliances-681x511.jpg"
                     title="Domestic"
                     description="Fridge, Tv, Fan,"
                      />
                      </Link>
                      <Link to ="laptop">
                     <Card 
-                    src="https://contents.asurion.com/wp-content/uploads/2020/07/Tablet-or-Laptop-for-Kid-Students.png"
+                    src="https://nassortechnologies.com/wp-content/uploads/2019/07/nastech2385764.jpg"
                     title="Laptos & Tab"
                     description="Apple, Acer, Dell, Hp, Huawei"
                     />
                     </Link>
                     <Link to="/phone">
                     <Card
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2Ra-m3k2Z0pzH9IdgYhykM2U6D_yTei_DJg&amp;usqp=CAU" 
+                    src="https://1.bp.blogspot.com/-6j0O7KLU44g/VycGES9Gr4I/AAAAAAAAAWY/IT8jC_2lDMQKuCFUrwMpudemZVYVDjeEwCLcB/s1600/country-wise-mobile-phones-import.png" 
                     title="Phones & Accessories"
                     description="Apple, Huawei, Samsung, Xaomi, Oppo"
                     />
