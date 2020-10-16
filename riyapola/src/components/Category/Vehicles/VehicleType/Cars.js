@@ -39,6 +39,15 @@ function Cars() {
             price="4,500,000 RS"
 
         />
+            <SearchResults
+            img="https://www.likes.lk/oc-content/uploads/12/4351.jpg"
+            location="Kandy"
+            title="Toyota Allion"
+            description="Toyota Allion 240 2004 Rg 2008 Rear Wiper."
+            star={4.03}
+            price="4,500,000 RS"
+
+        />
 
         </div>
     )
