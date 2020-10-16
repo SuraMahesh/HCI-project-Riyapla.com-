@@ -49,6 +49,16 @@ function Cars() {
 
         />
 
+        <SearchResults
+            img="https://cnet1.cbsistatic.com/img/oUE5am8D_vQvpLYUlMZpaVELgFE=/940x528/2020/05/21/6dbf688f-b506-46f0-8ac3-6b82c49c7e70/sonata-promo.jpg"
+            location="Kandy"
+            title="Toyota Allion"
+            description="Toyota Allion 240 2004 Rg 2008 Rear Wiper."
+            star={4.03}
+            price="4,500,000 RS"
+
+        />
+
         </div>
     )
 }

@@ -1,0 +1,23 @@
+/* 
+export default SignupPage;
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .signup {
+    background: scroll center
+      // url("https://visme.co/blog/wp-content/uploads/2020/06/animated-interactive-infographics-header.gif");
+      url("https://i.pinimg.com/originals/a3/84/3e/a3843e404a271edb47b1908dd2a6230b.gif");
+  }
+  
+  .signup-container {
+    width: 70%;
+    float: right;
+    padding-top: 13rem;
+  }
+  
+  .card {
+    padding-top: 20px;
+  }
+   */

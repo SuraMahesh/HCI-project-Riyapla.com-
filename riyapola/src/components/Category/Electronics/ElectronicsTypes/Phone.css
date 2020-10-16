@@ -1,0 +1,9 @@
+.phonePage__info {
+    padding: 20px;
+}
+
+.phonePage__info > button {
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 5px;
+}
