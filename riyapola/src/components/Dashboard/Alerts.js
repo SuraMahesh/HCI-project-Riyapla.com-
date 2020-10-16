@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
 import "./user.styles.scss";
 
-function PublicProfile() {
-  return (
-    <div className="container">
+function Alerts() {
+    return (
+        <div className="container">
+      <nav aria-label="breadcrumb" className="main-breadcrumb">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">Home</li>
+          <li className="breadcrumb-item">User</li>
+          <li className="breadcrumb-item active" aria-current="page">
+            Profile Settings
+          </li>
+        </ol>
+      </nav>
       <div className="row" gutters-sm>
         <div className="col-md-4 d-none d-md-block">
           <div className="card">
@@ -12,7 +21,7 @@ function PublicProfile() {
                 <a
                   href="creatorprofile"
                   data-toggle="tab"
-                  className="nav-item nav-link has-icon nav-link-faded active"
+                  className="nav-item nav-link has-icon nav-link-faded"
                 >
                   <svg
                     width="24"
@@ -28,7 +37,7 @@ function PublicProfile() {
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
-                  My account
+                  Profile Information
                 </a>
                 <a
                   href="accountsettings"
@@ -51,11 +60,11 @@ function PublicProfile() {
                   </svg>
                   Privacy
                 </a>
-
+                
                 <a
                   href="notifications"
                   data-toggle="tab"
-                  className="nav-item nav-link has-icon nav-link-faded"
+                  className="nav-item nav-link has-icon nav-link-faded active"
                 >
                   <svg
                     width="24"
@@ -71,15 +80,12 @@ function PublicProfile() {
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                   </svg>
-                  Alerts
+                 Alerts
                 </a>
-
-
-
                 <a
                   href="billing"
                   data-toggle="tab"
-                  className="nav-item nav-link has-icon nav-link-faded active"
+                  className="nav-item nav-link has-icon nav-link-faded"
                 >
                   <svg
                     width="24"
@@ -104,8 +110,6 @@ function PublicProfile() {
                   </svg>
                   Listing Payment Status
                 </a>
-
-
               </nav>
             </div>
           </div>
@@ -237,139 +241,130 @@ function PublicProfile() {
             </div>
             <div className="card-body tab-content">
               <div className="tab-pane active" id="profile">
-                <h5>Update Account</h5>
+                <h6>NOTIFICATIONS SETTINGS</h6>
                 <hr />
                 <form>
-                <h6 className="topic">User Type</h6>
-                  <div className="form-group col-md-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>User</option>
-                      <option>User </option>
-                      <option>Company</option>
-                    </select>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Full Name</h6>
                   <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="fullName"
-                      aria-describedby="fullNameHelp"
-                      placeholder="Enter your fullname"
-                    ></input>
-                    <small id="fullNameHelp" className="form-text text-muted">
-                    </small>
-                  </div>
-
-                  <p></p>
-                  <h6 className="topic">Phone number</h6>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="phone"
-                      placeholder="Enter your phone number"
-                    ></input>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Cell phone number</h6>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="phone"
-                      placeholder="Enter your cell phone number"
-                    ></input>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Country</h6>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="fullName"
-                      aria-describedby="fullNameHelp"
-                      placeholder="Srilanka"
-                    ></input>
-                    <small id="fullNameHelp" className="form-text text-muted">
-                    </small>
+                    <label className="d-block mb-0">Seurity Alerts</label>
+                    <div className="small text-muted mb-3">
+                      Receive security alert notifications via email
+                    </div>
+                    <div className="from-check">
+                      <input
+                        type="checkbox"
+                        className="from-check-input"
+                        id="customCheck1"
+                      />
+                      <label
+                        className="from-check-label"
+                        htmlFor="customCheck1"
+                      >
+                        {" "}
+                        Email each time a vulnerability is found{" "}
+                      </label>
+                    </div>
+                    <div className="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        className="from-check-inputt"
+                        id="customCheck2"
+                      />
+                      <label
+                        className="from-check-label"
+                        htmlFor="customCheck2"
+                      >
+                        {" "}
+                        Email a digest summary of vulnerability{" "}
+                      </label>
+                    </div>
                   </div>
                   <p></p>
-                  <h6 className="topic">Region</h6>
-                  <div className="form-group col-md-2">
-                    <select id="inputState" class="form-control">
-                      <option selected>Colombo</option>
-                      <option>Colombo </option>
-                      <option>Kandy</option>
-                      <option>Kurunegala</option>
-                      <option>Anuradhapuraya</option>
-                      <option>Jaffna</option>
-                      <option>Galle</option>
-                      <option>Matara</option>
-                    </select>
+                  <div className="form-group mb-0">
+                    <label className="d-block">SMS Notifications</label>
+                    <ul className="list-group list-group-sm">
+                      <li className="list-group-item has-icon">
+                        Comments
+                        <div className="from-check from-switch">
+                          <input
+                            type="checkbox"
+                            className="from-check-input"
+                            id="customSwitch1"
+                            checked
+                          />
+                          <label
+                            className="from-check-label"
+                            htmlFor="customSwitch1"
+                          ></label>
+                        </div>
+                      </li>
+                      <li className="list-group-item has-icon">
+                        Updates From People
+                        <div className="custom-control custom-switch">
+                          <input
+                            type="checkbox"
+                            className="from-check-input"
+                            id="customSwitch2"
+                            checked
+                          />
+                          <label
+                            className="from-check-label"
+                            htmlFor="customSwitch2"
+                          ></label>
+                        </div>
+                      </li>
+                      <li className="list-group-item has-icon">
+                        Reminders
+                        <div className="from-check from-switch">
+                          <input
+                            type="checkbox"
+                            className="from-check-input"
+                            id="customSwitch3"
+                          />
+                          <label
+                            className="from-check-label"
+                            htmlFor="customSwitch3"
+                          ></label>
+                        </div>
+                      </li>
+                      <li className="list-group-item has-icon">
+                        Events
+                        <div className="from-check from-switch">
+                          <input
+                            type="checkbox"
+                            className="from-check-input"
+                            id="customSwitch4"
+                          />
+                          <label
+                            className="from-check-label"
+                            htmlFor="customSwitch4"
+                          ></label>
+                        </div>
+                      </li>
+                      <li className="list-group-item has-icon">
+                        Pages You Follow
+                        <div className="from-check from-switch">
+                          <input
+                            type="checkbox"
+                            className="from-check-input"
+                            id="customSwitch5"
+                          />
+                          <label
+                            className="from-check-label"
+                            htmlFor="customSwitch5"
+                          ></label>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <p></p>
-                  <p></p>
-                  <h6 className="topic">City Area</h6>
-                  <div className="form-group">
-                    <input
-                      className="form-control autosize"
-                      id="bio"
-                      placeholder="Enter your City Area"
-                      style={{}}
-                    ></input>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Address</h6>
-                  <div className="form-group">
-                    <input
-                      className="form-control autosize"
-                      id="bio"
-                      placeholder="Enter your currnt address"
-                      style={{}}
-                    ></input>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Website</h6>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="url"
-                      placeholder="Enter your website address"
-                    ></input>
-                  </div>
-                  <p></p>
-                  <h6 className="topic">Description</h6>
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      id="location"
-                      placeholder="message"
-                    ></textarea>
-                  </div>
-                  <div className="form-group small text-muted">
-                  </div>
-                  <p></p>
-                  <button type="button" className="btn btn-primary">
-                    Update Profile
-                  </button>
-                  <button type="reset" className="btn btn-light">
-                    Reset Changes
-                  </button>
-
-
                 </form>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  )
+    )
 }
 
-export default PublicProfile
+export default Alerts
+

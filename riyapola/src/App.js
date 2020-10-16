@@ -24,6 +24,8 @@ import Laptop from "./components/Category/Electronics/ElectronicsTypes/Laptop";
 import Phone from "./components/Category/Electronics/ElectronicsTypes/Phone";
 import PartTime from './components/Category/Jobs/JobType/PartTime';
 import FullTime from './components/Category/Jobs/JobType/FullTime';
+import Alerts from "./components/Dashboard/Alerts";
+import Payment from "./components/Dashboard/Payment";
 
 
 
@@ -128,6 +130,16 @@ function App() {
           <Router path="/fulltime">
             <Header />
             <FullTime />
+            <Footer />
+          </Router>
+          <Router path="/alert">
+            <Header />
+            <Alerts />
+            <Footer />
+          </Router>
+          <Router path="/payment">
+            <Header />
+            <Payment />
             <Footer />
           </Router>
           <Route path="/">

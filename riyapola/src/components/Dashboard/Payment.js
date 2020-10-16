@@ -1,7 +1,7 @@
 import React from 'react';
-import "./user.styles.scss";
+import "./user.styles.scss"
 
-function Account() {
+function Payment() {
     return (
         <div className="container">
         <nav aria-label="breadcrumb" className="main-breadcrumb">
@@ -42,7 +42,7 @@ function Account() {
                   <a
                     href="accountsettings"
                     data-toggle="tab"
-                    className="nav-item nav-link has-icon nav-link-faded active"
+                    className="nav-item nav-link has-icon nav-link-faded"
                   >
                     <svg
                       width="24"
@@ -80,12 +80,12 @@ function Account() {
                       <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                       <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                     </svg>
-                    Alerts
+                    Alert
                   </a>
                   <a
                     href="billing"
                     data-toggle="tab"
-                    className="nav-item nav-link has-icon nav-link-faded"
+                    className="nav-item nav-link has-icon nav-link-faded active"
                   >
                     <svg
                       width="24"
@@ -240,128 +240,26 @@ function Account() {
                 </ul>
               </div>
               <div className="card-body tab-content">
-                <div className="tab-pana" id="account">
-                  <h5>Privacy</h5>
-                  <hr></hr>
+                <div className="tab-pana" id="billing">
+                  <h6>Payment Settings</h6>
+                  <hr />
                   <form>
-                  <h6 className="topic">User name</h6>
                     <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="username"
-                        aria-describedby="usernameHelp"
-                        placeholder="Enter your username"
-                      />
-                      <small id="usernameHelp" className="form-text text-muted">
-                        After changing your username, your old username becomes
-                        available for anyone else to claim.
-                      </small>
-                    </div>
-                    <p></p>
-                    <div className="form-group">
-                      <label className="d-block text-danger">
-                        Delete Account
-                      </label>
-                      <p className="text-muted font-size-sm">
-                        Once you delete your account, there is no going back.
-                        Please be certain.
-                      </p>
-                    </div>
-                    <button className="btn btn-danger" type="button">
-                      Delete Account
-                    </button>
-                    <h6 className="topic">Email</h6>
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="email"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter your email"
-                      />
-                      <small id="emailHelp" className="form-text text-muted">
-                        After changing your email, all the activities of account with new email account.
-                      </small>
-                    </div>
-                    <p></p>
-                    <h6 className="topic">Update email</h6>
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="email"
-                        aria-describedby="emailHelp"
-                        placeholder="New email address"
-                      />
-                      <small id="emailHelp" className="form-text text-muted">
-                        After changing your email, all the activities of account with new email account.
-                      </small>
-                    </div>
-                    <div className="form-group">
-                      <p className="text-muted font-size-sm">
-                        When Updating your email account, the system will send a new notifications.
-                        
-                      </p>
-                    </div>
-                    <button className="btn btn-danger" type="button">
-                      Update Email Account
-                    </button>
-                    <h6 className="topic">Change password</h6>
-                    <div className="form-group">
-                      <p></p>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Enter your old password"
-                      />
-                      <input
-                        type="text"
-                        className="form-control mt-1"
-                        placeholder="New password"
-                      />
-                      <input
-                        type="text"
-                        className="form-control mt-1"
-                        placeholder="Confirm new password"
-                      ></input>
-                    </div>
-                  </form>
-  
-                  <form>
-                  <h6 className="topic">Two Factor Authentication</h6>
-                    <div className="form-group">
+                      <label className="d-block mb-0">Payment Method</label>
+                      <div className="small text-muted mb-3">
+                        You have not added a payment method
+                      </div>
                       <button className="btn btn-info" type="button">
-                        Enable two-factor authentication
+                        Add Payment Method
                       </button>
-                      <p className="small text-muted mt-2">
-                        Two-factor authentication adds an additional layer of
-                        security to your account by requiring more than just a
-                        password to log in.
-                      </p>
                     </div>
-                  </form>
-  
-                  <form>
-                  <h6 className="topic">Session</h6>
                     <div className="form-group mb-0">
-                      <p className="font-size-sm text-secondary">
-                        This is a list of devices that have logged into your
-                        account. Revoke any sessions that you do not recognize.
-                      </p>
-                      <ul className="list-group list-group-sm">
-                        <li className="list-group-item has-icon">
-                          <button
-                            className="btn btn-light btn-sm ml-auto"
-                            type="button"
-                          >
-                            More info
-                          </button>
-                        </li>
-                      </ul>
+                      <label className="d-block">Payment History</label>
+                      <div className="border border-gray-500 bg-gray-200 p-3 text-center font-size-sm">
+                        You have not made any payment.
+                      </div>
                     </div>
                   </form>
-                  
                 </div>
               </div>
             </div>
@@ -371,5 +269,4 @@ function Account() {
     )
 }
 
-export default Account
-
+export default Payment
