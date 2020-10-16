@@ -1,21 +1,64 @@
 import React from 'react'
-import "./publish.styles.scss";
+import "./Publish.css";
 
 function Publish() {
     return (
-        <div className="container">
-            <div className="row" gutters-sm>
-                <div className="col-md-14">
-                    <div className="card">
-                        <div className="card-body tab-content">
-                            <div className="tab-pane active" id="profile">
-                               
-                            </div>
+        <div className="publish">
+            <div className="publish__card">
+                <div className='publish__container'>
+                    <h1>General Information</h1>
+
+                    <form>
+                        <div className="details">
+                            <h6 className="topic">Category</h6>
+                            <select class="form-control">
+                                <option>select a category</option>
+                                <option>Vehicles</option>
+                                <option>Electronics</option>
+                                <option>Property</option>
+                                <option>Jobs</option>
+                                <option>Education</option>
+                                <option>Home and Garden</option>
+                            </select>
                         </div>
-                    </div>
+                        <p />
+                        <div className="">
+                            <div className="details">
+                                <h6 className="topic">Title</h6>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputCity"></input>
+                                </div>
+
+                            </div>
+                            <div className="details">
+                                <h6 className="topic">Price</h6>
+                                <div className="form-group col-md-2">
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Rs</option>
+                                        <option>Dollar </option>
+                                        <option>Euro</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+                                <div className="form-group col-md-4">
+                                    <input type="text" class="form-control" id="inputZip"/>
+                                </div>
+                                
+                            </div>
+                            <button className="login__signInButton" type='submit'>Sign In</button>
+
+                    </form>
+
+                        <p>
+                            By signing-in you agree to the RIYAPOLA FAKE CLONE Conditions of Use & Sale. Please
+                            see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+            </p>
+
+                        <button className='login__registerButton'>Create your Riyaola Account</button>
+                </div>
                 </div>
             </div>
-        </div>
     )
 }
 
