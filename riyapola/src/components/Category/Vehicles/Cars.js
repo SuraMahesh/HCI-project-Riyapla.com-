@@ -27,9 +27,18 @@ function Cars() {
                 title="Toyota Primio"
                 description="2016 Toyota Premio 1.5 F L Package (NZT260, Japan)"
                 star={4.73}
-                price="3,500,000"
+                price="5,500,000 RS"
 
             />
+            <SearchResults
+            img="https://www.likes.lk/oc-content/uploads/12/4351.jpg"
+            location="Kandy"
+            title="Toyota Allion"
+            description="Toyota Allion 240 2004 Rg 2008 Rear Wiper."
+            star={4.03}
+            price="4,500,000 RS"
+
+        />
 
         </div>
     )

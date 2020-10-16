@@ -4,14 +4,14 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import StarIcon from "@material-ui/icons/Star";
 
 
-function SearchResults(
+function SearchResults({
     img,
     location,
     title,
     description,
     star,
     price,
-) {
+}) {
     return (
         <div className="searchResult">
             <img src={img} alt="" />

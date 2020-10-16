@@ -2,6 +2,7 @@ import React from 'react';
 import "./Home.css";
 import Card from "./Card";
 import { Link } from "react-router-dom";
+import Logo3 from "../Images/Logo3.jpeg";
 
 
 function Home() {

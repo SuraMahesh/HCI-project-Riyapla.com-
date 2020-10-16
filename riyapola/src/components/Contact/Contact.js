@@ -1,65 +1,56 @@
 import React from 'react';
 import "./Contact.css";
+import ReCAPTCHA from "react-google-recaptcha";
+
+function onChange(value) {
+    console.log("Captcha value:", value)
+  }
 
 function Contact() {
     return (
         <div className="publish">
-        <div className="publish__card">
-            <div className='publish__container'>
-                <h1>General Information</h1>
+            <div className="publish__card">
+                <div className='publish__container'>
+                    <h1>Send E-mail</h1>
 
-                <form>
-                    <div className="details">
-                        <h6 className="topic">Category</h6>
-                        <select class="form-control">
-                            <option>select a category</option>
-                            <option>Vehicles</option>
-                            <option>Electronics</option>
-                            <option>Property</option>
-                            <option>Jobs</option>
-                            <option>Education</option>
-                            <option>Home and Garden</option>
-                        </select>
-                    </div>
-                    <p />
-                    <div className="">
+                    <form>
+
                         <div className="details">
-                            <h6 className="topic">Title</h6>
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="inputCity"></input>
+                            <h6 className="topic">Your name(optional)</h6>
+                            <div className="form-group">
+                                <input type="text" className="form-control" id="inputCity"></input>
                             </div>
-
                         </div>
+                        <p />
                         <div className="details">
-                            <h6 className="topic">Price</h6>
-                            <div className="form-group col-md-2">
-                                <select id="inputState" class="form-control">
-                                    <option selected>Rs</option>
-                                    <option>Dollar </option>
-                                    <option>Euro</option>
-                                </select>
+                            <h6 className="topic">Your email address</h6>
+                            <div className="form-group">
+                                <input type="text" className="form-control" id="inputCity"></input>
                             </div>
                         </div>
-                       
-                            <div className="form-group col-md-4">
-                                <input type="text" class="form-control" id="inputZip"/>
+
+                        <p />
+                        <div className="details">
+                            <h6 className="topic">Message</h6>
+                            <div className="form-group">
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            
                         </div>
-                        <button className="login__signInButton" type='submit'>Sign In</button>
+                        <p></p>
 
-                </form>
+                        <ReCAPTCHA sitekey="YOUR_CLIENT_SITE_KEY" onChange={onChange} />
 
-                    <p>
-                        By signing-in you agree to the RIYAPOLA FAKE CLONE Conditions of Use & Sale. Please
-                        see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
-        </p>
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-lg">Large button</button>
 
-                    <button className='login__registerButton'>Create your Riyaola Account</button>
-            </div>
+                    </form>
+
+                   
+
+                </div>
             </div>
         </div>
-)
+    )
 }
 
 export default Contact
