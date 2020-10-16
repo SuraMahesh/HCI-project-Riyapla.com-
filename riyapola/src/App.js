@@ -26,6 +26,7 @@ import PartTime from './components/Category/Jobs/JobType/PartTime';
 import FullTime from './components/Category/Jobs/JobType/FullTime';
 
 
+
 function App() {
   return (
     <Router>
@@ -124,7 +125,7 @@ function App() {
             <PartTime />
             <Footer />
           </Router>
-          <Router path="fulltime">
+          <Router path="/fulltime">
             <Header />
             <FullTime />
             <Footer />
