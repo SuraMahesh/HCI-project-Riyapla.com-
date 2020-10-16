@@ -22,6 +22,8 @@ import Motorbikes from './components/Category/Vehicles/VehicleType/Motorbikes';
 import Domestic from './components/Category/Electronics/ElectronicsTypes/Domestic';
 import Laptop from "./components/Category/Electronics/ElectronicsTypes/Laptop";
 import Phone from "./components/Category/Electronics/ElectronicsTypes/Phone";
+import PartTime from './components/Category/Jobs/JobType/PartTime';
+import FullTime from './components/Category/Jobs/JobType/FullTime';
 
 
 function App() {
@@ -115,6 +117,16 @@ function App() {
           <Router path="/phone">
             <Header />
             <Phone />
+            <Footer />
+          </Router>
+          <Router path="/parttime">
+            <Header />
+            <PartTime />
+            <Footer />
+          </Router>
+          <Router path="fulltime">
+            <Header />
+            <FullTime />
             <Footer />
           </Router>
           <Route path="/">
