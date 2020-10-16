@@ -26,7 +26,6 @@ function FullTime() {
                 price="5,500,000 RS"
 
             />
-          
 
         </div>
     )
