@@ -19,6 +19,9 @@ import Footer from './components/Common/Footer';
 import Cars from "./components/Category/Vehicles/VehicleType/Cars";
 import Van from "./components/Category/Vehicles/VehicleType/Van";
 import Motorbikes from './components/Category/Vehicles/VehicleType/Motorbikes';
+import Domestic from './components/Category/Electronics/ElectronicsTypes/Domestic';
+import Laptop from "./components/Category/Electronics/ElectronicsTypes/Laptop";
+import Phone from "./components/Category/Electronics/ElectronicsTypes/Phone";
 
 
 function App() {
@@ -97,6 +100,21 @@ function App() {
           <Router path="/motorbikes">
             <Header />
             <Motorbikes />
+            <Footer />
+          </Router>
+          <Router path="/domestic">
+            <Header />
+            <Domestic />
+            <Footer />
+          </Router>
+          <Router path="/laptop">
+            <Header />
+            <Laptop />
+            <Footer />
+          </Router>
+          <Router path="/phone">
+            <Header />
+            <Phone />
             <Footer />
           </Router>
           <Route path="/">

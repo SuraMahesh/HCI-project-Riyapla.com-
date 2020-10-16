@@ -47,7 +47,16 @@ function Publish() {
                                 </div>
                                 
                             
-                            <button className="login__signInButton" type='submit'>Sign In</button>
+                                <div class="form-row">
+    <div className="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" />
+    </div>
+    <div className="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" className="form-control" id="inputPassword4"/>
+    </div>
+  </div>
 
                     </form>
 
