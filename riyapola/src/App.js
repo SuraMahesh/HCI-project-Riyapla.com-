@@ -16,7 +16,10 @@ import Jobs from "./components/Category/Jobs/Jobs";
 import HandG from "./components/Category/Home & Gardens/HandG";
 import Education from './components/Category/Education/Education';
 import Footer from './components/Common/Footer';
-import Cars from "./components/Category/Vehicles/Cars";
+import Cars from "./components/Category/Vehicles/VehicleType/Cars";
+import Van from "./components/Category/Vehicles/VehicleType/Van";
+import Motorbikes from './components/Category/Vehicles/VehicleType/Motorbikes';
+
 
 function App() {
   return (
@@ -84,6 +87,16 @@ function App() {
           <Router path="/cars">
             <Header />
             <Cars />
+            <Footer />
+          </Router>
+          <Router path="/van">
+            <Header />
+            <Van />
+            <Footer />
+          </Router>
+          <Router path="/motorbikes">
+            <Header />
+            <Motorbikes />
             <Footer />
           </Router>
           <Route path="/">

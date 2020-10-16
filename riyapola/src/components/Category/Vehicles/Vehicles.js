@@ -17,16 +17,20 @@ function Vehicles() {
                     description="Toyota, Nizzan, BMW, Audi"
                      />
                     </Link>
+                    <Link to="/van">
                     <Card 
                     src="https://lankatropicalwonders.com/uploads/tgallery/kdh_flat_031.jpg"
                     title="Van"
                     description="Toyota, Nizzan"
                     />
+                    </Link>
+                    <Link to="/motorbikes">
                     <Card
                     src="https://storage.googleapis.com/ti-thebikeinsurer/grid-boxes/extra/top-10/main_1441277375.png"
                     title="Motorbikes"
                     description="Pulser, Honda, TVS, Discover"
                     />
+                    </Link>
                 </div>
             
         </div>

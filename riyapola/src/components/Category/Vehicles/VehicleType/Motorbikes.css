@@ -1,0 +1,9 @@
+.bikesPage__info {
+    padding: 20px;
+}
+
+.bikesPage__info > button {
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 5px;
+}

@@ -1,7 +1,7 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
 import "./Cars.css";
-import SearchResults from './SearchResults';
+import SearchResults from '../SearchResults';
 
 
 function Cars() {
